@@ -57,22 +57,49 @@ section {
     padding-left: 30px;
 }
 
+section > p {
+    padding-bottom: 2em;
 }
+/* Devemos dar uma altura significativa para o nosso efeito paralax. */
+
 section.normal {
     background-color: white;
     color: black;
 }
 
+#preenchimento > p {
+    padding-bottom: 3em;
+}
+
 section.imagem {
     background-color: rgb(70, 69, 69);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.596);
+    background-attachment: fixed;
     
 }
+/* Nesse projeto paralax deixamos uma distancia entre as imagens de modo a exibilas uma por vez */
 
 section.imagem > p {
-    background-color: rgb(41, 41, 41);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.603);
+    background-color: rgba(26, 25, 25, 0.534);
     display: inline-block;
     padding: 5px;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+ 
+    background-size: cover;
+    /*para dar efeito compor fotos com tamanhos apropriados para o projeto */
+
+
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
 }
 
 footer {
